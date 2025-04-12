@@ -14,7 +14,7 @@ void viewFlights() {
     printf("1003\t\tColombo\t\tTokyo\t\t4\n");
     printf("1004\t\tColombo\t\tNew York\t2\n");
     printf("1005\t\tColombo\t\tParis\t\t0\n"); // No seats available
-    
+
 
 
     // Add a prompt to return to the main menu
