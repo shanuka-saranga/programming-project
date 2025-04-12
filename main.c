@@ -1,6 +1,7 @@
 #include<stdio.h>
 
-// Function to clear the input buffer
+
+
 void clearInputBuffer() {
     int c;
     while ((c = getchar()) != '\n' && c != EOF);
@@ -13,19 +14,19 @@ void viewFlights() {
     printf("1002\t\tColombo\t\tDubai\t\t3\n");
     printf("1003\t\tColombo\t\tTokyo\t\t4\n");
     printf("1004\t\tColombo\t\tNew York\t2\n");
-    printf("1005\t\tColombo\t\tParis\t\t0\n"); // No seats available
+    printf("1005\t\tColombo\t\tParis\t\t0\n"); 
 
 
 
-    // Add a prompt to return to the main menu
+ 
     printf("\nPress any key to return to the main menu...");
-    getchar(); // Wait for user input
+    getchar(); 
 }
 
 int main() {
     int choice;
 
-    while (1) { // Loop to repeatedly show the main menu
+    while (1) {
         printf("\n=============================================\n");
         printf("\n|  Welcome to the Flight Reservation System  |\n");
         printf("\n=============================================\n");
@@ -36,7 +37,7 @@ int main() {
         printf("4. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
-        clearInputBuffer(); // Clear the input buffer after scanf
+        clearInputBuffer();
 
         switch (choice) {
             case 1:
@@ -50,7 +51,7 @@ int main() {
                 break;
             case 4:
                 printf("Exiting...\n");
-                return 0; // Exit the program
+                return 0; 
             default:
                 printf("Invalid choice! Please try again.\n");
         }
